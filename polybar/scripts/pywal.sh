@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+## Author  : Aditya Shakya
+## Mail    : adi1090x@gmail.com
+## Github  : @adi1090x
+## Twitter : @adi1090x
+
 # Color files
 PFILE="$HOME/.config/leftwm/themes/current/polybar/colors.ini"
 RFILE="$HOME/.config/leftwm/themes/current/polybar/scripts/rofi/colors.rasi"
