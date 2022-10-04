@@ -12,7 +12,7 @@ keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
 # keyboard bindings
 if [ $keybLayout = "be" ]; then
-  cp ~/.config/leftwm/config-azerty.toml ~/.config/leftwm/config.toml
+  cp ~/.config/leftwm/config-azerty.ron ~/.config/leftwm/config.ron
 fi
 
 # keybindings daemon
@@ -58,8 +58,8 @@ elif [ -x "$(command -v compton)" ]; then
   compton --config $HOME/.config/leftwm/themes/current/compton.conf &> /dev/null &
 fi
 
-# Set the theme.toml config
-leftwm-command "LoadTheme $SCRIPTPATH/theme.toml"
+# Set the theme.ron config
+leftwm command "LoadTheme $SCRIPTPATH/theme.ron"
 
 # Set background
 if [ -x "$(command -v feh)" ]; then
